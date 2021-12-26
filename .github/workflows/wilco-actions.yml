@@ -24,5 +24,4 @@ jobs:
         uses: trywilco/actions@main
         with:
           owner: ${{ github.repository_owner }}
-      - run: yarn install && cd frontend && yarn install
-      - run: yarn lint
+      - run: yarn install && cd frontend && yarn install && yarn lint
