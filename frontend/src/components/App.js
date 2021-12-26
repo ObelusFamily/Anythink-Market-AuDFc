@@ -40,7 +40,7 @@ class App extends React.Component {
   }
 
   componentWillMount() {
-    var token = window.localStorage.getItem("jwt");
+    const token = window.localStorage.getItem("jwt");
     if (token) {
       agent.setToken(token);
     }
