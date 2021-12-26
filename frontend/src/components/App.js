@@ -19,7 +19,7 @@ const mapStateToProps = (state) => {
   return {
     appLoaded: state.common.appLoaded,
     appName: state.common.appName,
-    currentUser: state.common.currentUser,      
+    currentUser: state.common.currentUser,
     redirectTo: state.common.redirectTo,
   };
 };
@@ -45,7 +45,7 @@ class App extends React.Component {
       agent.setToken(token);
     }
 
-    this.props.onLoad(token ? agent.Auth.current() :  null, token);
+    this.props.onLoad(token ? agent.Auth.current() : null, token);
   }
 
   render() {
